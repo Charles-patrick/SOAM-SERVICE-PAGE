@@ -1,0 +1,406 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-size: 1.2rem;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.red-nav {
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    margin-top: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.red-nav,
+.black-nav {
+    z-index: 20;
+}
+
+.red-nav .nav-left li {
+    display: inline-block;
+    padding-top: 15px;
+
+}
+
+.red-nav .nav-left li:last-child {
+    margin-left: 70px;
+    font-style: italic;
+}
+
+.red-nav .nav-right li {
+    display: inline-block;
+    padding-top: 15px;
+}
+
+.red-nav .nav-right li a {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    font-size: 2rem;
+}
+
+.black-nav {
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    background-color: black;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 10px;
+    position: fixed;
+    top: 34px;
+    right: 0;
+    left: 0;
+}
+
+.mid-class {
+    width: 70%;
+    display: flex;
+}
+
+.mid-class li {
+    width: 25%;
+    text-align: center;
+    padding-top: 15px;
+    list-style: none;
+}
+
+.mid-class .link:hover {
+    color: red;
+}
+
+
+.mid-black-nav {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content,
+.dropdown-content-2,
+.dropdown-content-3,
+.dropdown-content-4 {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content-3,
+.dropdown-content-4 {
+    min-width: 250px;
+}
+
+.dropdown-content a,
+.dropdown-content-2 a,
+.dropdown-content-3 a,
+.dropdown-content-4 a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover,
+.dropdown-content-2 a:hover,
+.dropdown-content-3 a:hover,
+.dropdown-content-4 a:hover {
+    background-color: red;
+}
+
+.about-us:hover .dropdown-content,
+.programmes:hover .dropdown-content-2,
+.updates:hover .dropdown-content-3,
+.contact-us:hover .dropdown-content-4 {
+    display: block;
+}
+
+
+
+
+
+
+.mid-class li .link {
+    text-decoration: none;
+    color: white;
+}
+
+.mid-class li .home-link {
+    text-decoration: none;
+    color: white;
+}
+
+.mid-class .home {
+    width: 15%;
+    padding-top: 25px;
+}
+
+.black-nav .material-symbols-outlined {
+    position: relative;
+    top: 6px;
+    padding-left: 2px;
+    margin-left: -4px;
+}
+
+.last-class {
+    width: 18%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.black-nav .donate-btn {
+    background-color: red;
+    color: white;
+    padding: 15px 22%;
+    margin: 7px auto;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.black-nav .bar {
+    all: unset;
+    cursor: pointer;
+    color: white;
+    background-color: none;
+    font-size: 2.5rem;
+}
+
+.hide {
+    display: none;
+}
+main{
+    /* height: 100px; */
+    margin-top: 120px;
+}
+footer{
+    background-color: #3d3c3c;
+    color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+footer .upper-footer{
+    display: flex;
+    padding: 30px 0;
+    border-bottom: solid 1px white;
+}
+footer .email-input{
+    width: 50%;
+    display: flex;
+    padding: 15px 0;
+}
+.t{
+    display: table;
+    width: 100%;
+}
+footer .email-input input{
+    display: table-cell;
+    font-size: 1.9rem;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: none;
+    height: 50px;
+    padding-left: 3%;
+}
+footer .email-input input:focus {
+    border: none;
+    outline: none;
+}
+footer .email-input .button{
+    all: unset;
+    width: 30%;
+    height: 52px;
+    color: white;
+    background-color: red;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+}
+
+footer .newsletter{
+    width: 50%;
+    font-size: 17px;
+    line-height: 14px;
+}
+::-webkit-input-placeholder {
+    padding-left: 1px;
+}
+footer .lower-footer{
+    display: flex;
+    width: 100%;
+    margin-top: 3px;
+    font-size: 14px;
+}
+
+.foot-box-one{
+    width: 50%;
+    font-size: 16px;
+}
+.foot-box-two{
+    width: 20%;
+    font-size: 16px;
+}
+.foot-box-three{
+    width: 30%;
+    font-size: 16px;
+}
+.foot-box-two li{
+    list-style: none;
+    margin-bottom: 5px;
+}
+.foot-box-one div {
+    width: 100%;
+    line-height: 18px;
+}
+.foot-box-one .socials {
+    list-style: none;
+    display: flex;
+    font-size: 2rem;
+    padding: 20px 45%;
+}
+.foot-box-one .socials .fa-brands{
+    color: white;
+    padding: 2px 5px;
+
+}
+.foot-box-two li a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    bottom: 7px;
+}
+.modal{
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 120px;
+    right: 0;
+    left: 0;
+    /* text-align: center; */
+}
+.modal .div-text h1{
+    color: white;
+    text-align: center;
+    margin-top: 200px;
+    font-size: 50px;
+}
+.part-one{
+    margin-top: 130px;
+}
+.part-one .head-text{
+    text-align: center;
+}
+.part-one .head-text h1{
+    font-size: 50px;
+    margin-top: -5px;
+}
+.box-row{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10%;
+}
+.box-row .box{
+    width: 30%;
+    margin-bottom: 80px;
+}
+.box-row .box .image{
+    height: 200px;
+    background-color: #dbd8d8;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.box-row .box p ,
+.box-row .box h1{
+    text-align: center;
+}
+.box-row .box p {
+    padding: 2px 25px;
+}
+.part-two .head-text {
+    text-align: center;
+    padding-top: 150px;
+}
+
+.part-two .head-text h1 {
+    font-size: 50px;
+    margin-top: -5px;
+}
+.card-row-one,
+.card-row-two {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10%;
+}
+.card-row .card {
+    padding: 5px auto;
+    text-align: center;
+    /* border: solid 1px; */
+    height: 300px;
+    width: 30%;
+    margin-bottom: 80px;
+    background-color: #dbd8d8;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.card-row .card p{
+    padding: 2px 20px;
+}
+.card-row .card .tick {
+    border: solid 3px red;
+    border-radius: 50%;
+    margin: 40px 45%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding: 5px;
+    
+}
+.card-row .card .tick .fa-check{
+    color: red;
+    font-size: 2rem;
+}
+
+.base{
+    text-align: center;
+    margin-top: 50px;
+}
+.base h1{
+    font-size: 50px;
+    margin-top: -5px;
+}
+.buttons{
+    margin-top: -20px;
+    margin-bottom: 150px;
+}
+.donate-btn-two{
+        font-size: 14px;
+        padding: 15px 40px;
+        border: none;
+        border-radius: 15px;
+        background-color: red;
+        margin-right: 10px;
+}
+.member-btn{
+    font-size: 14px;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 15px;
+        background-color: #181818;
+        color: white;
+        margin-left: 10px;
+}
