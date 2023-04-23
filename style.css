@@ -44,7 +44,7 @@ body {
 
 .red-nav .nav-right li {
     display: inline-block;
-    padding-top: 15px;
+    padding-top: 6px;
 }
 
 .red-nav .nav-right li a {
@@ -68,9 +68,27 @@ body {
     right: 0;
     left: 0;
 }
+.pre-class{
+    width: 10%;
+}
+.last-class {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+.black-nav .donate-btn {
+    width: 100%;
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 15px 1px;
+    border: none;
+}
 
 .mid-class {
-    width: 70%;
+    padding-right: 20px;
+    width: 75%;
     display: flex;
 }
 
@@ -79,6 +97,10 @@ body {
     text-align: center;
     padding-top: 15px;
     list-style: none;
+}
+.mid-class .programmes,
+.mid-class .contact-us{
+    width: 30%;
 }
 
 .mid-class .link:hover {
@@ -132,10 +154,10 @@ body {
     display: block;
 }
 
-
-
-
-
+.dropdown-content-3,
+.dropdown-content-4 {
+    left: -35px;
+}
 
 .mid-class li .link {
     text-decoration: none;
@@ -159,28 +181,9 @@ body {
     margin-left: -4px;
 }
 
-.last-class {
-    width: 18%;
-    display: flex;
-    justify-content: space-between;
-}
 
-.black-nav .donate-btn {
-    background-color: red;
-    color: white;
-    padding: 15px 22%;
-    margin: 7px auto;
-    border-radius: 20px;
-    font-size: 16px;
-}
 
-.black-nav .bar {
-    all: unset;
-    cursor: pointer;
-    color: white;
-    background-color: none;
-    font-size: 2.5rem;
-}
+
 
 .hide {
     display: none;
@@ -211,11 +214,13 @@ footer .email-input{
 }
 footer .email-input input{
     display: table-cell;
-    font-size: 1.9rem;
+    font-size: 1.2rem;
+    font-weight: 100;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     border: none;
-    height: 50px;
+    height: 40px;
+    width: 70%;
     padding-left: 3%;
 }
 footer .email-input input:focus {
@@ -225,13 +230,15 @@ footer .email-input input:focus {
 footer .email-input .button{
     all: unset;
     width: 30%;
-    height: 52px;
+    height: 42px;
     color: white;
     background-color: red;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     text-align: center;
+    font-size: 15px;
 }
+
 
 footer .newsletter{
     width: 50%;
@@ -249,24 +256,42 @@ footer .lower-footer{
 }
 
 .foot-box-one{
-    width: 50%;
+    width: 55%;
     font-size: 16px;
 }
 .foot-box-two{
-    width: 20%;
+    padding-top: 70px;
+    width: 15%;
     font-size: 16px;
 }
+.foot-box-two h1{
+    font-weight: 400;
+}
+
 .foot-box-three{
+    padding-top: 70px;
     width: 30%;
     font-size: 16px;
+    margin-left: 30px;
+}
+.foot-box-three .location{
+    line-height: 25px;
+}
+.foot-box-three h1{
+    font-weight: 400;
 }
 .foot-box-two li{
     list-style: none;
     margin-bottom: 5px;
 }
-.foot-box-one div {
-    width: 100%;
-    line-height: 18px;
+.foot-box-one .lorem-text {
+    width: 95%;
+    line-height: 25px;
+    border-bottom: solid 0.5px ;
+}
+.foot-box-one .logo-div{
+    width: 90%;
+    line-height: 25px;
 }
 .foot-box-one .socials {
     list-style: none;
@@ -276,8 +301,7 @@ footer .lower-footer{
 }
 .foot-box-one .socials .fa-brands{
     color: white;
-    padding: 2px 5px;
-
+    margin: 1px 10px;
 }
 .foot-box-two li a{
     text-decoration: none;
@@ -320,10 +344,13 @@ footer .lower-footer{
     margin-bottom: 80px;
 }
 .box-row .box .image{
-    height: 200px;
-    background-color: #dbd8d8;
+    height: fit-content;
+    width: fit-content;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
+}
+.box-row .box .image img{
+    width: 100%;
 }
 .box-row .box p ,
 .box-row .box h1{
@@ -348,30 +375,25 @@ footer .lower-footer{
     padding: 5px 10%;
 }
 .card-row .card {
-    padding: 5px auto;
+    padding: 10px 1%;
     text-align: center;
-    /* border: solid 1px; */
     width: 30%;
     margin-bottom: 80px;
-    background-color: #dbd8d8;
+    background-color: #e5e5e5;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
 }
 .card-row .card p{
     padding: 2px 20px;
 }
-.card-row .card .tick {
-    border: solid 3px red;
-    border-radius: 50%;
-    margin: 40px 45%;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    padding: 5px;
-    
-}
 .card-row .card .tick .fa-check{
     color: red;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    border: solid 2.5px red;
+    padding: 5px;
+    border-radius: 50%;
+    margin-top: 40px;
+
 }
 
 .base{
@@ -389,16 +411,16 @@ footer .lower-footer{
 .donate-btn-two{
         font-size: 14px;
         padding: 15px 40px;
-        border: none;
-        border-radius: 15px;
+        border-radius: 25px;
         background-color: red;
         margin-right: 10px;
+        border: none;
 }
 .member-btn{
     font-size: 14px;
         padding: 15px 30px;
         border: none;
-        border-radius: 15px;
+        border-radius: 25px;
         background-color: #181818;
         color: white;
         margin-left: 10px;
