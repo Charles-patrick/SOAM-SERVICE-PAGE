@@ -106,6 +106,8 @@ body {
 .mid-class .link:hover {
     color: red;
 }
+/* automatically red style */
+
 
 
 .mid-black-nav {
@@ -146,13 +148,16 @@ body {
 .dropdown-content-4 a:hover {
     background-color: red;
 }
-
+.about-us:hover .dropdown-content a:nth-child(1){
+    background-color: red;
+}
 .about-us:hover .dropdown-content,
 .programmes:hover .dropdown-content-2,
 .updates:hover .dropdown-content-3,
 .contact-us:hover .dropdown-content-4 {
     display: block;
 }
+
 
 .dropdown-content-3,
 .dropdown-content-4 {
@@ -162,6 +167,9 @@ body {
 .mid-class li .link {
     text-decoration: none;
     color: white;
+}
+.mid-class li .a-link {
+    color: red;
 }
 
 .mid-class li .home-link {
