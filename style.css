@@ -28,7 +28,7 @@ body {
 
 .red-nav,
 .black-nav {
-    z-index: 20;
+    z-index: 200;
 }
 
 .red-nav .nav-left li {
@@ -106,11 +106,9 @@ body {
 .mid-class .link:hover {
     color: red;
 }
-/* automatically red style */
 
 
-
-.mid-black-nav {
+.mid-class .mid-black-nav {
     position: relative;
     display: inline-block;
 }
@@ -121,10 +119,11 @@ body {
 .dropdown-content-4 {
     display: none;
     position: absolute;
+    top: 50px;
     background-color: black;
     min-width: 180px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 100;
 }
 
 .dropdown-content-3,
@@ -148,33 +147,38 @@ body {
 .dropdown-content-4 a:hover {
     background-color: red;
 }
-.about-us:hover .dropdown-content a:nth-child(1){
-    background-color: red;
+.programmes:hover .dropdown-content-2 a:nth-child(3){
+    background-color: red; 
 }
+
 .about-us:hover .dropdown-content,
 .programmes:hover .dropdown-content-2,
 .updates:hover .dropdown-content-3,
 .contact-us:hover .dropdown-content-4 {
     display: block;
 }
-
-
+.dropdown-content{
+    left: -25px;
+}
+.dropdown-content-2{
+    left: -15px;
+}
 .dropdown-content-3,
 .dropdown-content-4 {
-    left: -35px;
+    left: -40px;
 }
 
 .mid-class li .link {
     text-decoration: none;
     color: white;
 }
-.mid-class li .a-link {
-    color: red;
-}
 
 .mid-class li .home-link {
     text-decoration: none;
     color: white;
+}
+.mid-class li .b-link {
+    color: red;
 }
 
 .mid-class .home {
@@ -188,18 +192,121 @@ body {
     padding-left: 2px;
     margin-left: -4px;
 }
+/* BODY STYLING */
+.part-one{
+    margin-top: 130px;
+}
+.part-one .head-text{
+    text-align: center;
+}
+.part-one .head-text h1{
+    font-size: 50px;
+    margin-top: -5px;
+}
+/* BOX STYLING */
+.big-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1em;
+    padding: 5px 10%;
+}
+.box{
+    width: 100%;
+    margin-bottom: 80px;
+}
+.box .image{
+    height: fit-content;
+    width: fit-content;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+ .box .image img{
+    width: 100%;
+}
+ .box p ,
+ .box h1{
+    text-align: center;
+}
+ .box p {
+    padding: 2px 25px;
+}
+.part-two .head-text {
+    text-align: center;
+    padding-top: 150px;
+}
 
+.part-two .head-text h1 {
+    font-size: 50px;
+    margin-top: -5px;
+}
 
+/* CARD STYLING */
+.big-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1em;
+    padding: 5px 10%;
+}
+ .card {
+    padding: 10px 1%;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 80px;
+    background-color: #e5e5e5;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+ .card p{
+    padding: 2px 20px;
+}
+ .card .tick .fa-check{
+    color: red;
+    font-size: 1.5rem;
+    border: solid 2.5px red;
+    padding: 5px;
+    border-radius: 50%;
+    margin-top: 40px;
 
+}
 
+.base{
+    text-align: center;
+    margin-top: 50px;
+}
+.base h1{
+    font-size: 50px;
+    margin-top: -5px;
+}
+.buttons{
+    margin-top: -20px;
+    margin-bottom: 150px;
+}
+.donate-btn-two{
+        font-size: 14px;
+        padding: 15px 40px;
+        border-radius: 25px;
+        background-color: red;
+        margin-right: 10px;
+        border: none;
+}
+.member-btn{
+    font-size: 14px;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 25px;
+        background-color: #181818;
+        color: white;
+        margin-left: 10px;
+}
 
 .hide {
     display: none;
 }
 main{
-    /* height: 100px; */
     margin-top: 120px;
 }
+
+/* FOOTER STYLING */
 footer{
     background-color: #3d3c3c;
     color: white;
@@ -253,6 +360,9 @@ footer .newsletter{
     font-size: 17px;
     line-height: 14px;
 }
+footer .newsletter p{
+    line-height: 25px;
+}
 ::-webkit-input-placeholder {
     padding-left: 1px;
 }
@@ -305,7 +415,7 @@ footer .lower-footer{
     list-style: none;
     display: flex;
     font-size: 2rem;
-    padding: 20px 45%;
+    padding: 20px 15%;
 }
 .foot-box-one .socials .fa-brands{
     color: white;
@@ -324,7 +434,7 @@ footer .lower-footer{
     top: 120px;
     right: 0;
     left: 0;
-    /* text-align: center; */
+    text-align: center;
 }
 .modal .div-text h1{
     color: white;
@@ -332,104 +442,490 @@ footer .lower-footer{
     margin-top: 200px;
     font-size: 50px;
 }
-.part-one{
-    margin-top: 130px;
+
+
+/* CHANGES MADE */
+.fa-bars {
+    color: white;
+    font-size: 2rem;
+    margin-top: 20px;
 }
-.part-one .head-text{
-    text-align: center;
+.hidden{
+    display: none;
 }
-.part-one .head-text h1{
-    font-size: 50px;
-    margin-top: -5px;
+.bar-btn{
+    display: none;
 }
-.box-row{
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 10%;
+.mid-class-x{
+    display: none;
 }
-.box-row .box{
+
+/* RESPONSIVENESS */
+@media only screen and (max-width: 1150px){
+ /* .link, .home ,.pre-class{
+    border: solid 1px white;
+ } */
+ .mid-class{
+    font-size: 14px;
+ }
+ .dropdown-content-3,
+.dropdown-content-4 {
+    left: -65px;
+}
+.dropdown-content {
+    left: -40px;
+}
+.dropdown-content-2{
+    left: -15px;
+}
+.foot-box-one{
+    width: 45%;
+}
+.foot-box-two{
+    width: 25%;
+}
+.foot-box-three{
     width: 30%;
-    margin-bottom: 80px;
 }
-.box-row .box .image{
-    height: fit-content;
-    width: fit-content;
-    border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px;
+
 }
-.box-row .box .image img{
+@media only screen and (max-width: 1022px){
+    .mid-class {
+        padding-right: 2px;
+        width: 80%;
+        margin-left: -40px;
+    }
+   
+   }
+@media only screen and (max-width: 930px){
+.mid-class .programmes{
+    width: 33%;
+}
+
+}
+/* BAR RESPONSIVENESS */
+@media only screen and (max-width: 870px){
+ 
+.mid-class{
+    display: none;
+}
+.bar-btn{
+    display: block;
+}
+.pre-class{
+    width: 15%;
+}
+.last-class{
+    width: 20%;
+}
+.black-nav .donate-btn {
+    font-size: 14px;
+    margin-left: -20%;
+}
+/* MODAL IMAGE HEIGHT CHANGE */
+.modal{
+    height: 370px;
+    top: 120px;
+}
+.modal .div-text h1{
+    margin-top: 150px;
+    font-size: 40px;
+}
+.modal-img{
+    height: 370px;
+}
+
+/* BAR DROPDOWN STYLINGS */
+.mid-class-x {
+    /* display: none; */
+    /* display: block; */
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0 ;
     width: 100%;
-}
-.box-row .box p ,
-.box-row .box h1{
-    text-align: center;
-}
-.box-row .box p {
-    padding: 2px 25px;
-}
-.part-two .head-text {
-    text-align: center;
-    padding-top: 150px;
+    z-index: 150;
+    background-color: black;
+    color: white;
+    padding: 10px 5px 20px 5px;
 }
 
-.part-two .head-text h1 {
-    font-size: 50px;
-    margin-top: -5px;
-}
-.card-row-one,
-.card-row-two {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 10%;
-}
-.card-row .card {
-    padding: 10px 1%;
+.mid-class-x li.mid-black-nav-x {
+    list-style: none;
+    display: block;
     text-align: center;
-    width: 30%;
-    margin-bottom: 80px;
-    background-color: #e5e5e5;
-    border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px;
+    padding: 20px  10px;
+    border-bottom: solid 1px white ;
 }
-.card-row .card p{
-    padding: 2px 20px;
+.mid-class-x li.mid-black-nav-x:last-child {
+    border-bottom: none;
 }
-.card-row .card .tick .fa-check{
-    color: red;
-    font-size: 1.5rem;
-    border: solid 2.5px red;
-    padding: 5px;
-    border-radius: 50%;
-    margin-top: 40px;
+/* SECOND DROPDOWN  */
+/* ALL DROPDOWNS */
+.dropdown-content a,
+.dropdown-content-2 a,
+.dropdown-content-3 a,
+.dropdown-content-4 a {
+    transition-delay: 0.1s;
+    font-size: 13px;
+    min-width: 100%;
+}
+.dropdown-content,
+.dropdown-content-2,
+.dropdown-content-3,
+.dropdown-content-4 {
+    min-width: 100%;
+}
+/* ABOUT-US DROPDOWN */
+.about-us:hover .dropdown-content {
+    position: absolute;
+    top: 140px;
+}
+li.about-us:hover{
+    padding-bottom: 120px;
+}
+.dropdown-content a{
+    padding-left: 30px;
+}
+/* PROGRAMMES DROPDOWN */
+.programmes:hover .dropdown-content-2 {
+    position: absolute;
+    top: 200px;
+}
+li.programmes:hover{
+    padding-bottom: 155px;
+}
+.dropdown-content-2 a{
+    padding-left: 10px;
+}
+/* UPDATES DROPDOWN */
+.updates:hover .dropdown-content-3 {
+    position: absolute;
+    top: 270px;
+}
+li.updates:hover{
+    padding-bottom: 155px;
+}
+.dropdown-content-3 a{
+    padding-left: 60px;
+}
+/* CONTACT-US DROPDOWN */
+.contact-us:hover .dropdown-content-4 {
+    position: absolute;
+    top: 350px;
+}
+li.contact-us:hover{
+    padding-bottom: 120px;
+}
+.dropdown-content-4 a{
+    padding-left: 60px;
+}
 
 }
+/* FOOTER RESPONSIVENESS */
+@media only screen and (max-width: 750px) {
+    .foot-box-one{
+        width: 35%;
+    }
+    .foot-box-two{
+        width: 35%;
+    }
+    .foot-box-three{
+        width: 30%;
+    }
+    .foot-box-one .socials {
+        padding: 20px 5%;
+    }
+    footer .email-input .button{
+        font-size: 14px;
+        width: 35%;
+    }
+    footer .email-input input{
+        width: 65%;
+        padding-left: 3%;
+    }
+}
+@media only screen and (max-width: 680px) {
+    /* RED NAV */
+    .red-nav {
+      height: 55px;
+    }
+    .red-nav .nav-left li {
+        font-size: 15px;
+        padding-top: 0px;
+    }
+    .red-nav .nav-left{
+        font-size: 14px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column-reverse;
+        padding-bottom: 0px;
+        padding: 1% 1px;
+    }
+    .red-nav .nav-left li:last-child {
+        margin-left: 0;
+        font-style: italic;
+    }
+    /* BLACK-NAV */
+    .black-nav{
+        top: 39PX;
+    }
+    .black-nav .donate-btn {
+        padding-top: 2px;
+    }
+    .last-class{
+        width: 22%;
+    }
+    .pre-class{
+        width: 20%;
+    }
+    /* UPPER FOOTER */
+    footer .upper-footer{
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0;
+        border-bottom: solid 1px white;
+    }
+    footer .newsletter{
+        width: 100%;
+        font-size: 17px;
+        line-height: 14px;
+        text-align: center;
+    }
+    footer .email-input{
+        width: 100%;
+        display: flex;
+        padding: 15px 0;
+    }
+}
+/* LOWER FOOTER */
+@media only screen and (max-width: 580px) {
+    footer .lower-footer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 3px;
+        font-size: 14px;
+    }
+    .foot-box-one{
+        width: 100%;
+        text-align: center;
+    }
+    .foot-box-two{
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .foot-box-three{
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .foot-box-two h1,
+    .foot-box-three h1{
+        font-weight: 500;
+    }
+    .foot-box-one .socials {
+        padding: 20px auto;
+        justify-content: center;
+        border-bottom: solid 0.5px ;
+    }
 
+    .foot-box-one .lorem-text {
+        border-bottom: none;
+    }
+    .foot-box-two {
+        padding-bottom: 20px;
+        border-bottom: solid 0.5px ;
+        margin-left: 0px;
+    }
+    .foot-box-three {
+        margin-left: 0px;
+    }
+    /* MODAL */
+    .modal{
+        height: 270px;
+        top: 120px;
+    }
+    .modal-img{
+        height: 270px;
+    }
+    .modal .div-text h1{
+        padding: auto 5%;
+        font-size: 35px;
+        font-weight: 600;
+        margin-top: 110px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    /* BLACK NAV */
+    .last-class{
+        width: 30%;
+    }
+    .black-nav .donate-btn {
+        font-size: 13px;
+        margin-left: -10%;
+        justify-content: center;
+    }
+    .pre-class{
+        width: 25%;
+    }
+    /* MODAL */
+    .modal{
+        height: 270px;
+        top: 120px;
+    }
+    .modal-img{
+        height: 270px;
+    }
+    .modal .div-text h1{
+        padding: auto 5%;
+        font-size: 30px;
+        font-weight: 600;
+        margin-top: 100px;
+    }
+}
+@media only screen and (max-width: 360px) {
+    footer .email-input input{
+        font-size: 1.1rem;
+        font-weight: 100;
+        width: 70%;
+        padding-left: 4%;
+    }
+}
+@media only screen and (max-width: 355px) {
+    footer .email-input input{
+        font-size: 01.1rem;
+        font-weight: 100;
+        width: 70%;
+        padding-left: 4%;
+    }
+
+}
+@media only screen and (max-width: 331px) {
+    .red-nav .nav-left li {
+        font-size: 12px;
+        padding-top: 0px;
+    }
+    .red-nav .nav-right i{
+        font-size: 25px;
+        font-weight: 400;
+    } 
+}
+@media only screen and (max-width: 316px) {
+    
+    .red-nav .nav-right li a {
+        margin-left: 5px;
+    }
+    .fa-bars {
+        font-size: 1.5rem;
+    }
+    .black-nav .donate-btn {
+        font-size: 10px;
+        /* margin-left: -10%; */
+    }
+    .pre-class{
+        width: 30%;
+    }
+    .lower-footer,
+    .upper-footer{
+        font-size: smaller;
+    }
+}
+/* BODY RESPONSIVENESS */
+@media only screen and (max-width: 1015px){
+    
+    .big-card{
+        grid-template-columns: 1fr 1fr ;
+    }
+    .big-box{
+        grid-template-columns: 1fr 1fr ;
+    }
+   }
+@media only screen and (max-width: 770px){
+    .part-one .head-text h1 ,
+    .part-two .head-text h1{
+        font-size: 40px;
+    }
+    .box h1,
+    .card h1{
+        font-size: 30px;
+    }
+    .part-two .head-text{
+        padding-top: 10px;
+    }
+    .part-one .head-text {
+        margin-top: -50px;
+    }
+    .base h1{
+        font-size: 40px;
+        margin-top: -5px;
+    }
+}
+@media only screen and (max-width: 560px){
+    .big-card{
+        grid-template-columns: 1fr ;
+    }
+    .big-box{
+        grid-template-columns: 1fr ;
+    }
+    .box .image{
+        width: 100%;
+    }
+    .base{
+        text-align: center;
+        margin-top: 10px;
+    }
+    .base h1{
+        font-size: 30px;
+        margin-top: -5px;
+    }
+    .buttons{
+        margin-top: 10px;
+        margin-bottom: 70px;
+    }
+    .donate-btn-two{
+        font-size: 13px;
+        padding: 15px 20px;
+    }
+    .member-btn{
+        font-size: 13px;
+        padding: 15px 30px;
+        margin-left: 0px;
+    }
+   }
+@media only screen and (max-width: 370px){    
 .base{
-    text-align: center;
-    margin-top: 50px;
+    margin-top: 5px;
 }
 .base h1{
-    font-size: 50px;
+    font-size: 25px;
     margin-top: -5px;
 }
-.buttons{
-    margin-top: -20px;
-    margin-bottom: 150px;
+.base p{
+    font-size: 15px;
+    margin-top: -5px;
 }
 .donate-btn-two{
-        font-size: 14px;
-        padding: 15px 40px;
-        border-radius: 25px;
-        background-color: red;
-        margin-right: 10px;
-        border: none;
+    font-size: 12px;
+    padding: 15px 18px;
 }
 .member-btn{
-    font-size: 14px;
-        padding: 15px 30px;
-        border: none;
-        border-radius: 25px;
-        background-color: #181818;
-        color: white;
-        margin-left: 10px;
+    font-size: 12px;
+    padding: 15px 15px;
+    margin-left: 0px;
+}
+.box h1,
+.card h1{
+    font-size: 25px;
+}
+.box p,
+.card p{
+    font-size: 18px;
+}
+.part-one .head-text h1 ,
+    .part-two .head-text h1{
+        font-size: 30px;
+    
+}
 }

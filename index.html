@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="dist/hamburgers.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
@@ -18,7 +19,7 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <title>SOAM SERVICE PAGE</title>
+    <title>SERVICE CLONE</title>
 </head>
 
 <body>
@@ -44,13 +45,13 @@
 
         <ul class="black-nav">
             <div class="pre-class">
-                <img src="logo.png" alt="" height="100%">
+                <img src="./img/logo.png" alt="" height="100%" width="100%">
             </div>
             <ul class="mid-class">
                 <li class="mid-black-nav home"><a class="home-link">HOME</a></li>
                 <li class="mid-black-nav about-us">
                     <a class="link a-link" id="about-us-link">ABOUT US
-                        <span class="material-symbols-outlined ">expand_more</span>
+                        <span class="material-symbols-outlined">expand_more</span>
                     </a>
                     <div class="dropdown-content">
                         <a href="#">OUR SERVICES</a>
@@ -93,23 +94,28 @@
                     </div>
                 </li>
             </ul>
-            <div class="last-class">
+            <div class="last-class ">
                 <button class="donate-btn">DONATE</button>
+            </div>
+
+            <div class="bar-btn ">
+                <i class="fa-solid fa-bars"></i>
             </div>
         </ul>
     </header>
 
+
+
     <main>
-        <section>
             <div>
-                <img src="./backimg.jpg" alt="" height="500px" width="100%">
+                <img src="./img/backimg.jpg" alt="" height="500px" width="100%" class="modal-img">
             </div>
             <div class="part-one">
                 <div class="head-text">
                     <p>OUR SERVICES</p>
                     <h1>What We Do</h1>
                 </div>
-                <div class="box-row">
+                <div class="big-box">
                     <div class="box box-one">
                         <div class="image">
                             <img src="./Rectangle 83.png" alt="">
@@ -137,8 +143,6 @@
                              excepturi ex vero totam asperiores, nulla soluta
                              sequi itaque ullam natus</p>
                     </div>
-                </div>
-                <div class="box-row box-row-two">
                     <div class="box box-four">
                         <div class="image">
                             <img src="./Rectangle 83.png" alt="">
@@ -175,13 +179,12 @@
                     <p>WHY US?</p>
                     <h1>What Makes Us <br> Different?</h1>
                 </div>
-                <div class="card-row">
-                    <div class="card-row-one">
+                <div class="big-card">
                         <div class="card card-one">
                             <div class="tick">
                                 <i class="fa-solid fa-check"></i>
                             </div>
-                            <h1>Lorem, ipsum.</h1>
+                            <h1>Lorem, ipsum dolor.</h1>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                                 quis tenetur harum doloremque praesentium temporibus rerum.</p>
                         </div>
@@ -201,8 +204,6 @@
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit 
                                 quis tenetur harum doloremque praesentium temporibus rerum.</p>
                         </div>
-                    </div>
-                    <div class="card-row-two">
                         <div class="card card-four">
                             <div class="tick">
                                 <i class="fa-solid fa-check"></i>
@@ -239,7 +240,13 @@
                     <input type="button" value="BECOME A MEMBER" class="member-btn">
             </div>
         </section>
+    </main> 
+        
+            
     </main>
+
+
+
     <footer>
         <section class="upper-footer">
             <div class="newsletter">
@@ -247,14 +254,14 @@
                 <p>signup for regular newsletter and stay up to date</p>
             </div>
             <div class="email-input">
-                <input type="email" class='dns' placeholder="Your email address" />
+                <input type="email" id='dns' placeholder="Your email address" />
                 <input type="button" value="SUBMIT" class="button"/>
             </div>
         </section>
         <section class="lower-footer">
             <div class="foot-box-one">
                 <div class="logo-div">
-                    <img src="logo (2).png" alt="" height="105px">
+                    <img src="./img/logo (2).png" alt="" height="105px">
                 </div>
                 <div class="lorem-text">
                     <p>
@@ -296,10 +303,62 @@
             </div>
         </section>
     </footer>
+
+    <!-- MODAL TEXT -->
     <div class="modal">
         <div class="div-text">
-            <h1>OUR SERVICES</h1>
+            <h1>HEADER AND FOOTER</h1>
         </div>
     </div>
+
+
+    <!-- BAR DROPDOWN TEXT -->
+    <ul class="mid-class-x">
+        <li class="mid-black-nav-x home"><a class="home-link">HOME</a></li>
+        <li class="mid-black-nav-x about-us">
+            <a class="link a-link" id="about-us-link">ABOUT US
+                <span class="material-symbols-outlined">expand_more</span>
+            </a>
+            <div class="dropdown-content">
+                <a href="#">OUR SERVICES</a>
+                <a href="#">WHO ARE WE</a>
+            </div>
+        </li>
+
+
+
+        <li class="mid-black-nav-x programmes">
+            <a class="link b-link">PROGRAMMES
+                <span class="material-symbols-outlined">expand_more</span>
+            </a>
+            <div class="dropdown-content-2">
+                <a href="#">OUR CAMPAIGNS</a>
+                <a href="#">EVENTS</a>
+                <a href="#">GALLERY</a>
+            </div>
+        </li>
+
+        <li class="mid-black-nav-x updates">
+            <a class="link c-link">UPDATES
+                <span class="material-symbols-outlined">expand_more</span>
+            </a>
+            <div class="dropdown-content-3">
+                <a href="#">LATEST NEWS & ARTICLES</a>
+                <a href="#">OUR STORES</a>
+                <a href="#">FAQS</a>
+            </div>
+        </li>
+
+        <li class="mid-black-nav-x contact-us">
+            <a class="link d-link">CONTACT US
+                <span class="material-symbols-outlined">expand_more</span>
+            </a>
+            <div class="dropdown-content-4">
+                <a href="#">SEND US A MESSAGE</a>
+                <a href="#">BECOME A VOLUNTEER</a>
+                <a href="#">DONATE</a>
+            </div>
+        </li>
+    </ul>
 </body>
 </html>
